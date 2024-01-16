@@ -20,38 +20,10 @@ const Home = () => (
     theme="white"
     cards={[
       {
-        heading: "Example page A",
-        copy: " ",
-        cta: {
-          href: `./example-page-a${_htmlExtension}`,
-        },
-      },
-      {
-        heading: "Example page B",
-        copy: " ",
-        cta: {
-          href: `./example-page-b${_htmlExtension}`,
-        },
-      },
-      {
-        heading: "Example page c",
-        copy: " ",
-        cta: {
-          href: `./example-page-c${_htmlExtension}`,
-        },
-      },
-      {
         heading: "White theme example page",
         copy: " ",
         cta: {
           href: `./white-theme-example${_htmlExtension}`,
-        },
-      },
-      {
-        heading: "Gray 100 theme example page",
-        copy: " ",
-        cta: {
-          href: `./g100-theme-example${_htmlExtension}`,
         },
       },
     ]}

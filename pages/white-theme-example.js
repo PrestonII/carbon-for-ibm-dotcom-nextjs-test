@@ -232,7 +232,7 @@ const WhiteThemeExample = () => (
       animation={"slide-up"}
       selectorTargets={selectorTargets}
     >
-      <TableOfContents theme="white" menuLabel="Jump to" stickyOffset={48}>
+      {/* <TableOfContents theme="white" menuLabel="Jump to" stickyOffset={48}>
         <a
           id="content"
           name="content-block-simple"
@@ -442,8 +442,8 @@ const WhiteThemeExample = () => (
             },
           ]}
         />
-      </TableOfContents>
-
+      </TableOfContents> */}
+      {/* 
       <div className="bx--grid">
         <div className="bx--row">
           <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
@@ -513,7 +513,7 @@ const WhiteThemeExample = () => (
             href: "https://www.example.com",
           },
         }}
-      />
+      /> */}
 
       <div className="scroll-target">
         <DDSCardSectionCarousel>
@@ -599,7 +599,7 @@ const WhiteThemeExample = () => (
           </DDSCarousel>
         </DDSCardSectionCarousel>
       </div>
-      <div className="bx--grid">
+      {/* <div className="bx--grid">
         <div className="bx--row">
           <div className="bx--col-sm-4 bx--col-lg-12 bx--offset-lg-4">
             <CTASection
@@ -646,7 +646,7 @@ const WhiteThemeExample = () => (
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </ScrollAnimations>
     <DDSBackToTop />
   </>
