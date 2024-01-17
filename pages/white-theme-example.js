@@ -1,25 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content */
-import {
-  CTASection,
-  CalloutQuote,
-  CardSectionSimple,
-  ContentBlockMedia,
-  ContentBlockSimple,
-  ContentGroupCards,
-  ContentGroupPictograms,
-  LeadSpace,
-  LinkList,
-  LogoGrid,
-  ScrollAnimations,
-  TableOfContents,
-} from "@carbon/ibmdotcom-react";
+import { LeadSpace, ScrollAnimations } from "@carbon/ibmdotcom-react";
 // eslint-disable-next-line sort-imports
 import { ArrowDown20, ArrowRight20 } from "@carbon/icons-react";
-import {
-  Desktop,
-  HybridCloud_02,
-  SecureSearch,
-} from "@carbon/pictograms-react";
 
 const DDSBackToTop = dynamic(
   import(
@@ -61,20 +43,6 @@ const DDSCarousel = dynamic(
   { ssr: false }
 );
 
-const DDSContentGroupBanner = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/content-group-banner/content-group-banner"
-  ),
-  { ssr: false }
-);
-
-const DDSContentGroupHeading = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/content-group/content-group-heading"
-  ),
-  { ssr: false }
-);
-
 const DDSContentSectionCopy = dynamic(
   import(
     "@carbon/ibmdotcom-web-components/es/components-react/content-section/content-section-copy.js"
@@ -89,20 +57,6 @@ const DDSContentSectionHeading = dynamic(
   { ssr: false }
 );
 
-const DDSLinkList = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/link-list/link-list"
-  ),
-  { ssr: false }
-);
-
-const DDSLinkListItemCTA = dynamic(
-  import(
-    "@carbon/ibmdotcom-web-components/es/components-react/cta/link-list-item-cta"
-  ),
-  { ssr: false }
-);
-
 const DDSLinkWithIcon = dynamic(
   import(
     "@carbon/ibmdotcom-web-components/es/components-react/link-with-icon/link-with-icon.js"
@@ -112,53 +66,6 @@ const DDSLinkWithIcon = dynamic(
 
 import dynamic from "next/dynamic";
 import React from "react";
-
-/**
- * Setting the .html extension between local development and static deployment
- *
- * @type {string}
- * @private
- */
-const _htmlExtension = process.env.NODE_ENV !== "production" ? "" : ".html";
-
-const contentBlockCopy = `Content block simple works well as an introductory section on a page by providing a clear starting point for the user.
-By default, this component works the best as at the top of the page and includes a heading, introductory paragraph, optional
-media (image or video), optional CTA (call-to-action), and a horizontal rule at the bottom before the next component.
-
-
-A variation of this component brings in aside elements and can introduce navigational quick links on the right side on desktop.
-You can see the aside element at work in the Content block media component directly below this one.`;
-
-const linkListProps = {
-  heading: "Aside element",
-  items: [
-    {
-      type: "local",
-      copy: "Content block media",
-      cta: {
-        href: "https://www.ibm.com/standards/carbon/components/content-block-media",
-      },
-    },
-    {
-      type: "video",
-      copy: "Link to a video",
-      videoTitle: "test",
-      media: {
-        src: "1_9h94wo6b",
-        type: "video",
-      },
-    },
-    {
-      type: "video",
-      copy: "Link to another video",
-      videoTitle: "test",
-      media: {
-        src: "1_9h94wo6b",
-        type: "video",
-      },
-    },
-  ],
-};
 
 const selectorTargets = `
   .bx--content-block__heading,
